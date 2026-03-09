@@ -135,39 +135,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 5000);
     });
     
-    // Contact Form Submission
-    const contactForm = document.getElementById('contactForm');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const message = document.getElementById('message').value;
-            
-            // Here you would typically send the form data to a server
-            // For this example, we'll just show a success message
-            
-            // Create success message
-            const successMessage = document.createElement('div');
-            successMessage.className = 'form-success';
-            successMessage.innerHTML = `
-                <div style="text-align: center; padding: 2rem;">
-                    <i class="fas fa-check-circle" style="font-size: 3rem; color: var(--success-color); margin-bottom: 1rem;"></i>
-                    <h3>Thank you, ${name}!</h3>
-                    <p>Your message has been sent successfully. We'll get back to you soon.</p>
-                </div>
-            `;
-            
-            // Replace form with success message
-            contactForm.innerHTML = '';
-            contactForm.appendChild(successMessage);
-        });
-    }
-    
     // Scroll Animation
     const animateElements = document.querySelectorAll('.animate-on-scroll');
     
