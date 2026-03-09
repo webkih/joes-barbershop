@@ -1,9 +1,9 @@
 /* Base Styles */
 :root {
-    --primary-color: #0f766e;
-    --primary-dark: #0b5b55;
-    --primary-light: #99f6e4;
-    --secondary-color: #134e4a;
+    --primary-color: #b45309;
+    --primary-dark: #7c2d12;
+    --primary-light: #fde68a;
+    --secondary-color: #1f2937;
     --text-color: #333333;
     --text-light: #666666;
     --background-color: #ffffff;
@@ -153,7 +153,7 @@ img {
 }
 
 .btn-secondary:hover {
-    background-color: #0f3f3c;
+    background-color: #111827;
     color: white;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
